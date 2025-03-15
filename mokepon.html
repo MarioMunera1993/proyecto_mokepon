@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON</title>
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">MOKEPON! 🔥💧🌱</h1>
+        <h2 class="sub_title">REGLAS DEL JUEGO:</h2>
+        <p>AGUA💧 le gana a FUEGO🔥, FUEGO🔥 le gana a TIERRA🌱, TIERRA🌱 le gana a AGUA💧</p>
+    </header>
+
+    <div id="select_mascota">
+        <h2>Elige tu mascota</h2>
+
+        <!--
+            Mascotas
+            hipodoge -> agua
+            capipepo -> tierra
+            ratiguella -> fuego
+            langostelvis -> agua y fuego
+            tucapalma -> agua y tierra
+            pydos -> tierra y fuego
+        -->
+        <label for="hipodoge">HIPODOGUE</label>
+        <input type="radio" name="seleccion" id="hipodoge"/>
+
+        <label for="capipepo">CAPIPEPO</label>
+        <input type="radio" name="seleccion" id="capipepo"/>
+
+        <label for="ratigueya">RATIGUEYA</label>
+        <input type="radio" name="seleccion" id="ratigueya"/>
+
+        <label for="langostelvis">LANGOSTELVIS</label>
+        <input type="radio" name="seleccion" id="langostelvis"/>
+
+        <label for="tacupalma">TACUPALMA</label>
+        <input type="radio" name="seleccion" id="tacupalma"/>
+
+        <label for="pydos">PYDOS</label>
+        <input type="radio" name="seleccion" id="pydos"/>
+
+        <button id="btn_mascotas">Seleccionar</button>
+
+    </div>
+
+    <div id="select_poderes">
+        <h2>Elige tu ataque</h2>
+
+        <p>Tu mascota <span id="nombre_mascota_jugador"></span> tiene <span id="vidas_mascota_jugador">3</span> vidas</p>
+        <p>La mascota <span id="nombre_mascota_enemigo"></span> del enemigo tiene <span id="vidas_mascota_enemigo">3</span> vidas</p>
+
+        <div>
+            <button id="btn_fuego">Fuego 🔥</button>
+            <button id="btn_agua">Agua 💧</button>
+            <button id="btn_tierra">Tierra 🌱</button>
+        </div>
+    </div>
+
+    <div id="mensajitos">
+        <!--Lo que sale aqui biene desde js-->
+    </div>
+    <br>
+
+    <div id="reset">
+        <button id="btn_reiniciar">Reiniciar</button>
+
+    </div>
+
+    
+</body>
+</html>

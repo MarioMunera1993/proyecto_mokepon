@@ -1,0 +1,14 @@
+.header{
+    justify-items: center;
+    background-color: teal;
+}
+.title{
+    color: tomato;
+    width: 320px;
+    height: 50px;
+    background-color: teal;
+}
+
+.sub_title{
+    color: rgb(135, 170, 185);
+}
