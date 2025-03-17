@@ -13,10 +13,10 @@
         <h2 class="sub_title">REGLAS DEL JUEGO:</h2>
         <p>AGUA💧 le gana a FUEGO🔥, FUEGO🔥 le gana a TIERRA🌱, TIERRA🌱 le gana a AGUA💧</p>
     </header>
-
-    <div id="select_mascota">
+    <div>
         <h2>Elige tu mascota</h2>
-
+    </div>
+    <div id="select_mascota">
         <!--
             Mascotas
             hipodoge -> agua
@@ -26,26 +26,56 @@
             tucapalma -> agua y tierra
             pydos -> tierra y fuego
         -->
-        <label for="hipodoge">HIPODOGUE</label>
-        <input type="radio" name="seleccion" id="hipodoge"/>
+        <div class="targeta_mokepon">
+            <label for="hipodoge" class="targeta_mokepon">
+                HIPODOGUE
+                <img src="./img/hipodogue.png" alt="" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="hipodoge"/>
+            </label>
+        </div>
 
-        <label for="capipepo">CAPIPEPO</label>
-        <input type="radio" name="seleccion" id="capipepo"/>
+        <div class="targeta_mokepon">
+            <label for="capipepo" class="targeta_mokepon">
+                CAPIPEPO
+                <img src="/img/capipepo.png" alt="capipepo" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="capipepo"/>
+            </label>
+        </div>
 
-        <label for="ratigueya">RATIGUEYA</label>
-        <input type="radio" name="seleccion" id="ratigueya"/>
+        <div class="targeta_mokepon">
+            <label for="ratigueya" class="targeta_mokepon">
+                RATIGUEYA
+                <img src="/img/ratigueya.png" alt="ratigueya" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="ratigueya"/>
+            </label>
+        </div>
 
-        <label for="langostelvis">LANGOSTELVIS</label>
-        <input type="radio" name="seleccion" id="langostelvis"/>
+        <div class="targeta_mokepon">
+            <label for="langostelvis" class="targeta_mokepon">
+                LANGOSTELVIS
+                <img src="/img/langostelvis.png" alt="langostelvis" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="langostelvis"/>
+            </label>
+        </div>
 
-        <label for="tacupalma">TACUPALMA</label>
-        <input type="radio" name="seleccion" id="tacupalma"/>
+        <div class="targeta_mokepon">
+            <label for="tacupalma" class="targeta_mokepon">
+                TACUPALMA
+                <img src="/img/tacupalma.png" alt="tacupalma" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="tacupalma"/>
+            </label>
+        </div>
 
-        <label for="pydos">PYDOS</label>
-        <input type="radio" name="seleccion" id="pydos"/>
-
+        <div class="targeta_mokepon">
+            <label for="pydos" class="targeta_mokepon">
+                PYDOS
+                <img src="/img/pydos.png" alt="pydos" class="imagen_mokepon">
+                <input type="radio" name="seleccion" id="pydos"/>
+            </label>
+        </div> 
+    </div>
+    <div class="content_button">
         <button id="btn_mascotas">Seleccionar</button>
-
     </div>
 
     <div id="select_poderes">
