@@ -12,7 +12,7 @@ function iniciarJuego() {
     let btn_reinicar = document.getElementById('btn_reiniciar')
     btn_reinicar.style.display = 'none'
 
-
+    
     let btnMascotaJugador = document.getElementById('btn_mascotas')
     btnMascotaJugador.addEventListener('click', seleccionarMacotaJugador)
     
@@ -31,7 +31,7 @@ function iniciarJuego() {
 }
 
 function seleccionarMacotaJugador() {
-    //habiloitamos la seccion poderes 
+    //habilitamos la seccion poderes 
     let seccionSelecionarAtaque = document.getElementById('select_poderes')
     seccionSelecionarAtaque.style.display = 'block'
 
@@ -39,7 +39,10 @@ function seleccionarMacotaJugador() {
     let seccionSelecionarMascota = document.getElementById('select_mascota')
     seccionSelecionarMascota.style.display = 'none'
 
-    
+    //escondemos boton de celecionar mascota
+    let btnMascotaJugador = document.getElementById('btn_mascotas')
+    btnMascotaJugador.style.display = 'none'
+
 
     //creamos las variables para saber cual de estas esta selecionada
     let hipodoge = document.getElementById('hipodoge').checked
@@ -80,6 +83,10 @@ function seleccionarMacotaEnemigo() {
 
     //en esta variable modificamos el innerHTML para poner el nombre de la mascota
     let spanMascotaEnemigo = document.getElementById('nombre_mascota_enemigo')
+
+    //escondemos h2 de titulo selecciona la mascota jugador
+    let tituloSelecionaMascota = document.getElementById('title2')
+    tituloSelecionaMascota.style.display = 'none'
 
     if (mascotaAleatorio == 1) {
         spanMascotaEnemigo.innerHTML = 'HIPODOGUE'   

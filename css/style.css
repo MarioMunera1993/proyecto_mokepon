@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
 body{
-    font-family: "Tektur", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     background-image: url('/img/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,11 @@ body{
 
 .sub_title{
     color: rgb(47, 65, 73);
+}
+
+.sub_title2{
+    justify-items: center;
+    font-family: "Tektur", sans-serif;
 }
 
 #select_mascota{
@@ -60,26 +65,14 @@ input{
     width: 200px;
     border-radius: 30px;
     color: aliceblue;
+    font-family: "Tektur", sans-serif;
 }
 
-/*
-.targeta_mokepon{
-    width: 140px;
-    height: 100px;
-    background-color: aquamarine;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-    border: 1px solid black;
-    text-align: center;
+#btn_mascotas:hover{
+    background-color: rgb(24, 76, 221);
+    color: rgb(206, 140, 19);
 }
 
-
-
-#btn_mascotas{
-    background-color: rgb(75, 204, 36);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+#select_poderes{
+    background-color: aliceblue;
 }
-*/
