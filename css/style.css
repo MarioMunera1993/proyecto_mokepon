@@ -37,7 +37,6 @@ body{
 
 .targeta_mokepon{
     width: 200px;
-    height: 200px;
     background-color: rgb(192, 108, 30);
     padding: 10px;
     box-sizing: border-box;
@@ -47,7 +46,7 @@ body{
 }
 
 .targeta_mokepon:hover{
-    background-color: rgb(175, 177, 44);;
+    background-color: rgb(175, 177, 44);
 }
 
 .imagen_mokepon{
@@ -56,6 +55,11 @@ body{
 
 input{
     display: none;
+}
+
+input:checked + label{
+    width: 200px;
+    background-color: rgb(175, 177, 44);
 }
 
 .content_button{
@@ -97,11 +101,53 @@ input{
 }
 
 #mensajes{
-    background-color: aqua;
+    background-color: rgb(96, 238, 238);
     width: 280px;
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+#btn_reiniciar{
+    border: none;
+    color: blue;
+    background-color: aqua;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    text-align: center;
+}
+
+.vidas{
+    font-size: 30px;
+    color: rgb(71, 24, 2);
+}
+
+@media(max-width: 1247px){
+    #select_mascota{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-gap: 100px;
+
+    }
+
+}
+
+@media(max-width: 639px){
+    #select_mascota{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+

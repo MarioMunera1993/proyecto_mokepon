@@ -178,11 +178,10 @@ function crearMensaje(resultado) {
     let nuevoAtaqueDelJugador =document.createElement('p')
     let nuevoAtaqueDelEnemigo =document.createElement('p')
     
-    notificacion.innerHTML = resultado
+    mensajes.innerHTML = resultado
     nuevoAtaqueDelJugador.innerHTML = poderJugador
     nuevoAtaqueDelEnemigo.innerHTML = poderEnemigo
 
-    mensajes.appendChild(notificacion)
     ataques_jugador.appendChild(nuevoAtaqueDelJugador)
     ataques_enemigo.appendChild(nuevoAtaqueDelEnemigo)
 
@@ -195,10 +194,8 @@ function crearMensaje(resultado) {
 }
 
 function crearMensajeFinal(resultadoFinal) {
-    let mensajes = document.getElementById('mensajitos')
-    let parrafo =document.createElement('p')
-    parrafo.innerHTML = resultadoFinal
-    mensajes.appendChild(parrafo)
+    let mensajes = document.getElementById('resultado')
+    mensajes.innerHTML = resultadoFinal
 
     //modificamos los botones con la propiedad disable cuando llegue a 0 la vida sea del jugador o del enemigo
     let botonFuego = document.getElementById('btn_fuego')

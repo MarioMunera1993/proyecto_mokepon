@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="./js/mokepon.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
         <h1 class="title">MOKEPON! 🔥💧🌱</h1>
@@ -17,63 +19,38 @@
         <h2 id="title2">Elige tu mascota</h2>
     </div>
     <div id="select_mascota">
-        <!--
-            Mascotas
-            hipodoge -> agua
-            capipepo -> tierra
-            ratiguella -> fuego
-            langostelvis -> agua y fuego
-            tucapalma -> agua y tierra
-            pydos -> tierra y fuego
-        -->
-        <div class="targeta_mokepon">
-            
-            <label for="hipodoge" class="targeta_mokepon">
-                HIPODOGUE
-                <img src="./img/hipodogue.png" alt="" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="hipodoge"/>
-            </label>
-        </div>
+        <input type="radio" name="seleccion" id="hipodoge" />
+        <label for="hipodoge" class="targeta_mokepon">
+            <p>HIPODOGUE</p>
+            <img src="./img/hipodogue.png" alt="" class="imagen_mokepon">
+        </label>
 
-        <div class="targeta_mokepon">
-            <label for="capipepo" class="targeta_mokepon">
-                CAPIPEPO
-                <img src="/img/capipepo.png" alt="capipepo" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="capipepo"/>
-            </label>
-        </div>
+        <input type="radio" name="seleccion" id="capipepo" />
+        <label for="capipepo" class="targeta_mokepon">
+            <p>CAPIPEPO</p>
+            <img src="/img/capipepo.png" alt="capipepo" class="imagen_mokepon">
+        </label>
+        <input type="radio" name="seleccion" id="ratigueya" />
+        <label for="ratigueya" class="targeta_mokepon">
+            <p>RATIGUEYA</p>
+            <img src="/img/ratigueya.png" alt="ratigueya" class="imagen_mokepon">
+        </label>
+        <input type="radio" name="seleccion" id="langostelvis" />
+        <label for="langostelvis" class="targeta_mokepon">
+            <p>LANGOSTELVIS</p>
+            <img src="/img/langostelvis.png" alt="langostelvis" class="imagen_mokepon">
+        </label>
+        <input type="radio" name="seleccion" id="tacupalma" />
+        <label for="tacupalma" class="targeta_mokepon">
+            <p>TACUPALMA</p>
+            <img src="/img/tacupalma.png" alt="tacupalma" class="imagen_mokepon">
+        </label>
+        <input type="radio" name="seleccion" id="pydos" />
+        <label for="pydos" class="targeta_mokepon">
+            <p>PYDOS</p>
+            <img src="/img/pydos.png" alt="pydos" class="imagen_mokepon">
+        </label>
 
-        <div class="targeta_mokepon">
-            <label for="ratigueya" class="targeta_mokepon">
-                RATIGUEYA
-                <img src="/img/ratigueya.png" alt="ratigueya" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="ratigueya"/>
-            </label>
-        </div>
-
-        <div class="targeta_mokepon">
-            <label for="langostelvis" class="targeta_mokepon">
-                LANGOSTELVIS
-                <img src="/img/langostelvis.png" alt="langostelvis" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="langostelvis"/>
-            </label>
-        </div>
-
-        <div class="targeta_mokepon">
-            <label for="tacupalma" class="targeta_mokepon">
-                TACUPALMA
-                <img src="/img/tacupalma.png" alt="tacupalma" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="tacupalma"/>
-            </label>
-        </div>
-
-        <div class="targeta_mokepon">
-            <label for="pydos" class="targeta_mokepon">
-                PYDOS
-                <img src="/img/pydos.png" alt="pydos" class="imagen_mokepon">
-                <input type="radio" name="seleccion" id="pydos"/>
-            </label>
-        </div> 
     </div>
     <div class="content_button">
         <button id="btn_mascotas">Seleccionar</button>
@@ -88,27 +65,27 @@
         </div>
 
         <div>
-           <div id="mensajes">
-             <p id="resultado">Mucha suerte</p>
-           </div>
-            <div id="ataques_jugador">
-
-            </div>
-            <div id="ataques_enemigo">
-
-            </div>
-        
-            <div id="reset">
-                <button id="btn_reiniciar">Reiniciar</button>
-        
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte</p>
+                <div id="reset">
+                    <button id="btn_reiniciar">Reiniciar</button>
+                </div>
             </div>
 
-            <div>
-                <p>Tu mascota <span id="nombre_mascota_jugador"></span> tiene <span id="vidas_mascota_jugador">3</span> vidas</p>
-                <p>La mascota <span id="nombre_mascota_enemigo"></span> del enemigo tiene <span id="vidas_mascota_enemigo">3</span> vidas</p>
-
+            <div class="ataques">
+                <div>
+                    <p id="vidas_mascota_jugador" class="vidas">3</p>
+                    <p id="nombre_mascota_jugador"></p>
+                    <div id="ataques_jugador"></div>
+                </div>
+                <div>
+                    <p id="vidas_mascota_enemigo" class="vidas">3</p>
+                    <p id="nombre_mascota_enemigo"></p>
+                    <div id="ataques_enemigo"></div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
