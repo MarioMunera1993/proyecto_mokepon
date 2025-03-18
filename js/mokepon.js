@@ -33,7 +33,7 @@ function iniciarJuego() {
 function seleccionarMacotaJugador() {
     //habilitamos la seccion poderes 
     let seccionSelecionarAtaque = document.getElementById('select_poderes')
-    seccionSelecionarAtaque.style.display = 'block'
+    seccionSelecionarAtaque.style.display = 'flex'
 
     //escondemos la seccion masconta jugador
     let seccionSelecionarMascota = document.getElementById('select_mascota')
@@ -171,10 +171,27 @@ function revisarVidas() {
 }
 
 function crearMensaje(resultado) {
-    let mensajes = document.getElementById('mensajitos')
+    let mensajes = document.getElementById('resultado')
+    let ataques_jugador = document.getElementById('ataques_jugador')
+    let ataques_enemigo = document.getElementById('ataques_enemigo')
+
+    let nuevoAtaqueDelJugador =document.createElement('p')
+    let nuevoAtaqueDelEnemigo =document.createElement('p')
+    
+    notificacion.innerHTML = resultado
+    nuevoAtaqueDelJugador.innerHTML = poderJugador
+    nuevoAtaqueDelEnemigo.innerHTML = poderEnemigo
+
+    mensajes.appendChild(notificacion)
+    ataques_jugador.appendChild(nuevoAtaqueDelJugador)
+    ataques_enemigo.appendChild(nuevoAtaqueDelEnemigo)
+
+
+    /*
     let parrafo =document.createElement('p')
     parrafo.innerHTML = 'Tu mascota ataco con ' + poderJugador + ' , la mascota de tu enemigo ataco con ' + poderEnemigo + ': '+ resultado
-    mensajes.appendChild(parrafo)
+    */
+    
 }
 
 function crearMensajeFinal(resultadoFinal) {

@@ -80,28 +80,39 @@
     </div>
 
     <div id="select_poderes">
-        <h2>Elige tu ataque</h2>
-
-        <p>Tu mascota <span id="nombre_mascota_jugador"></span> tiene <span id="vidas_mascota_jugador">3</span> vidas</p>
-        <p>La mascota <span id="nombre_mascota_enemigo"></span> del enemigo tiene <span id="vidas_mascota_enemigo">3</span> vidas</p>
+        <div>
+            <h2>Elige tu ataque</h2>
+            <button id="btn_fuego" class="btn_ataque">Fuego 🔥</button>
+            <button id="btn_agua" class="btn_ataque">Agua 💧</button>
+            <button id="btn_tierra" class="btn_ataque">Tierra 🌱</button>
+        </div>
 
         <div>
-            <button id="btn_fuego">Fuego 🔥</button>
-            <button id="btn_agua">Agua 💧</button>
-            <button id="btn_tierra">Tierra 🌱</button>
+             <!--<div id="mensajitos">
+            </div>
+            <br>-->
+
+           <div id="mensajes">
+             <p id="resultado">Mucha suerte</p>
+           </div>
+            <div id="ataques_jugador">
+
+            </div>
+            <div id="ataques_enemigo">
+
+            </div>
+        
+            <div id="reset">
+                <button id="btn_reiniciar">Reiniciar</button>
+        
+            </div>
+
+            <div>
+                <p>Tu mascota <span id="nombre_mascota_jugador"></span> tiene <span id="vidas_mascota_jugador">3</span> vidas</p>
+                <p>La mascota <span id="nombre_mascota_enemigo"></span> del enemigo tiene <span id="vidas_mascota_enemigo">3</span> vidas</p>
+
+            </div>
         </div>
     </div>
-
-    <div id="mensajitos">
-        <!--Lo que sale aqui biene desde js-->
-    </div>
-    <br>
-
-    <div id="reset">
-        <button id="btn_reiniciar">Reiniciar</button>
-
-    </div>
-
-    
 </body>
 </html>

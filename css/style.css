@@ -46,6 +46,10 @@ body{
     border-radius: 30px;
 }
 
+.targeta_mokepon:hover{
+    background-color: rgb(175, 177, 44);;
+}
+
 .imagen_mokepon{
     width: 150px;
 }
@@ -73,6 +77,31 @@ input{
     color: rgb(206, 140, 19);
 }
 
+/*Modificamos la segunda pantalla*/
+
 #select_poderes{
-    background-color: aliceblue;
+    /*Display flex se pone desde JS*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_ataque{
+    background-color: rgb(39 165 88 / 79%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-family: "Tektur", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#mensajes{
+    background-color: aqua;
+    width: 280px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
